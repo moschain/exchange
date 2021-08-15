@@ -1,0 +1,345 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "cancle",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "deposit",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "mid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "donate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "mid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint64"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "globals",
+            "base": "",
+            "fields": [
+                {
+                    "name": "market_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "liquidity",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "token",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "market",
+            "base": "",
+            "fields": [
+                {
+                    "name": "mid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "contract0",
+                    "type": "name"
+                },
+                {
+                    "name": "contract1",
+                    "type": "name"
+                },
+                {
+                    "name": "sym0",
+                    "type": "symbol"
+                },
+                {
+                    "name": "sym1",
+                    "type": "symbol"
+                },
+                {
+                    "name": "reserve0",
+                    "type": "asset"
+                },
+                {
+                    "name": "reserve1",
+                    "type": "asset"
+                },
+                {
+                    "name": "liquidity_token",
+                    "type": "uint64"
+                },
+                {
+                    "name": "price0_last",
+                    "type": "float64"
+                },
+                {
+                    "name": "price1_last",
+                    "type": "float64"
+                },
+                {
+                    "name": "price0_cumulative_last",
+                    "type": "uint64"
+                },
+                {
+                    "name": "price1_cumulative_last",
+                    "type": "uint64"
+                },
+                {
+                    "name": "last_update",
+                    "type": "time_point_sec"
+                }
+            ]
+        },
+        {
+            "name": "newmarket",
+            "base": "",
+            "fields": [
+                {
+                    "name": "creator",
+                    "type": "name"
+                },
+                {
+                    "name": "contract0",
+                    "type": "name"
+                },
+                {
+                    "name": "contract1",
+                    "type": "name"
+                },
+                {
+                    "name": "sym0",
+                    "type": "symbol"
+                },
+                {
+                    "name": "sym1",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "order",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "mid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "quantity0",
+                    "type": "asset"
+                },
+                {
+                    "name": "quantity1",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "rmmarket",
+            "base": "",
+            "fields": [
+                {
+                    "name": "mid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "swap_stat",
+            "base": "",
+            "fields": [
+                {
+                    "name": "day",
+                    "type": "uint64"
+                },
+                {
+                    "name": "total_amount_0",
+                    "type": "asset"
+                },
+                {
+                    "name": "total_amount_1",
+                    "type": "asset"
+                },
+                {
+                    "name": "total_fee_0",
+                    "type": "asset"
+                },
+                {
+                    "name": "total_fee_1",
+                    "type": "asset"
+                },
+                {
+                    "name": "total_count_0",
+                    "type": "uint32"
+                },
+                {
+                    "name": "total_count_1",
+                    "type": "uint32"
+                },
+                {
+                    "name": "last_update",
+                    "type": "time_point_sec"
+                }
+            ]
+        },
+        {
+            "name": "test",
+            "base": "",
+            "fields": [
+                {
+                    "name": "amount_in",
+                    "type": "uint64"
+                },
+                {
+                    "name": "reserve_in",
+                    "type": "uint64"
+                },
+                {
+                    "name": "reserve_out",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "withdraw",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "mid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint64"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "cancle",
+            "type": "cancle",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deposit",
+            "type": "deposit",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "donate",
+            "type": "donate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "newmarket",
+            "type": "newmarket",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmmarket",
+            "type": "rmmarket",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "test",
+            "type": "test",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "withdraw",
+            "type": "withdraw",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "globals",
+            "type": "globals",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "liquidity",
+            "type": "liquidity",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "markets",
+            "type": "market",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "orders",
+            "type": "order",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "swapstat",
+            "type": "swap_stat",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}

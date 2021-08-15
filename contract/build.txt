@@ -1,0 +1,1 @@
+eosio-cpp -abigen defi.swap/src/defi.swap.cpp -o defi.swap/defi.swap.wasm
